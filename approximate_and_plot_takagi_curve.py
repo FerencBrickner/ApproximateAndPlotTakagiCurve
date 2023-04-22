@@ -50,10 +50,7 @@ def plot_takagi_curve() -> None:
     )
     y = list(map(approximate_takagi_curve_at_specific_point, x))
 
-    plt.plot(x, y)
-    plt.xlabel("x")
-    plt.ylabel("blanc(x)")
-    plt.show()
+    _ = [plt.plot(x, y), plt.xlabel("x"), plt.ylabel("blanc(x)"), plt.show()]
 
 
 if __name__ == "__main__":
